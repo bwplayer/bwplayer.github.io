@@ -153,10 +153,44 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .logo {
+        margin-bottom: 0.75rem;
+    }
     nav ul {
-        display: none; /* Simple responsive solution: hide nav links */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        margin-left: 0;
+    }
+    nav ul li a {
+        display: inline-block;
+        padding: 0.5rem 0.85rem;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.18);
+        font-size: 0.95rem;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+        background: rgba(255, 255, 255, 0.35);
+        outline: 2px solid #fff;
     }
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+    .hero {
+        padding: 2.5rem 1rem;
+    }
+    .content-section {
+        padding: 1.5rem 1rem;
     }
 }
