@@ -1,3 +1,3 @@
-# Changes version 1.0
+# Changes version 0.1
 
-- The first release of the program.
+- First public test preview of Blue Wave Player.

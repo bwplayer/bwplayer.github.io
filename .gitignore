@@ -1,0 +1,5 @@
+# Temporary extraction folders
+BWP/
+*.tmp
+.DS_Store
+Thumbs.db
