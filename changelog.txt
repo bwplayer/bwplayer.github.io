@@ -1,3 +1,42 @@
+# Changes version 0.2
+
+### Loudness Normalization & Audio Limiter
+- Added ITU-R BS.1770 / EBU R128 loudness normalization to ensure consistent volume levels across different tracks and episodes.
+- Independent target loudness (LUFS) presets configurable for Books, Podcasts, and Music.
+- Added a look-ahead limiter and upgraded audio processing to 32-bit floating point, preventing distortion and clipping during volume boost (>100%) and equalizer adjustments.
+- Optional dynamic leveler with selectable strength (Light, Medium, Strong).
+- Background loudness estimation and database caching for instant, zero-delay playback on subsequent plays.
+- Shortcuts: Press Shift+B to toggle loudness normalization on/off, or Ctrl+Shift+B to open normalization settings.
+
+### Music Transitions & Smart Mixing
+- Rebuilt track transition engine with intelligent, content-aware audio analysis.
+- Added transition presets: Standard, Energetic Radio, Gentle Flow, Club/DJ, Slam Cut, Quick Blend, Full Blend, Gap Close, and Custom.
+- Accurate playback-position-driven fades that remain precise at any playback speed and pause gracefully.
+- Automatic silence detection and trimming to eliminate dead air between tracks.
+- Hot-start protection for songs starting abruptly with vocals or beats.
+- Support for album gapless playback and configurable manual track switch fades.
+
+### Playback Fades & Seamless Seeking
+- Added optional smooth fade-out and fade-in when pausing and resuming playback.
+- Added seamless dual-stream crossfade seeking, eliminating clicks and audio jumps when seeking within tracks.
+- Intelligent volume dipping during rapid or repeated seeks (holding arrow keys).
+- Individual fade settings for Book, Podcast, and Music playback modes (Ctrl+Shift+I).
+
+### Podcast Downloads & Management
+- Added "Download All Episodes" for podcasts: press Ctrl+S on a podcast to queue all its episodes for download (from oldest to newest), or press Ctrl+S again to cancel remaining downloads.
+- Added Ctrl+Shift+S shortcut to cancel all pending and active downloads at once.
+- Added "Show in Folder" (Ctrl+F) on downloaded podcast episodes to locate and highlight the file directly in Windows Explorer.
+- Added shortcut Ctrl+Alt+J to open the downloads folder directly from anywhere in the player.
+- Built-in disk space protection that monitors free drive space, keeps at least 500 MB free, and gracefully pauses downloads if the drive becomes full.
+
+### Accessibility & Screen Reader Improvements
+- Fixed an issue where NVDA would announce "unavailable" before modal dialog windows (such as folder and file pickers) fully took focus.
+
+### Bug Fixes & Performance
+- Fixed RSS feed parsing errors for podcast feeds containing non-channel XML elements before the main channel (such as Acast feeds).
+- High-performance batch database operations for smooth queuing and cancellation of large download batches.
+- General audio stream management and memory optimizations.
+
 # Changes version 0.1
 
 - First public test preview of Blue Wave Player.
