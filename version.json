@@ -1,7 +1,7 @@
 ﻿{
-    "Version":  "0.1",
+    "Version":  "0.2",
     "Url":  "https://github.com/bwplayer/bwplayer.github.io/raw/refs/heads/main/BWP.zip",
     "UpdaterUrl":  "https://github.com/bwplayer/bwplayer.github.io/raw/refs/heads/main/updator.exe",
     "ChangelogUrl":  "https://github.com/bwplayer/bwplayer.github.io/raw/refs/heads/main/changelog.txt",
-    "Sha256":  "81fef99eecae370a511be0fef3909ce18f046d9c50d18d4df9618ccc6fd8ae68"
+    "Sha256":  "f089305a78fbad31c3ce61a54778432d4126aa50fe107b8cfe7181989d8e7f7c"
 }

@@ -1,3 +1,42 @@
+# Changes version 0.2
+
+### Loudness Normalization
+- Added loudness normalization, keeping the volume consistent across tracks and episodes.
+- Separate loudness settings for Books, Podcasts, and Music.
+- Added protection against distortion when boosting the volume above 100% or adjusting the equalizer, along with improved sound quality.
+- Optional dynamic leveler with selectable strength (Light, Medium, Strong).
+- Loudness is measured in the background and remembered, so playback starts without delay.
+- Shortcuts: press Shift+B to turn loudness normalization on or off, or Ctrl+Shift+B to open its settings.
+
+### Music Transitions & Smart Mixing
+- Rebuilt track transitions that adapt to each song.
+- Added transition presets: Standard, Energetic Radio, Gentle Flow, Club/DJ, Slam Cut, Quick Blend, Full Blend, Gap Close, and Custom.
+- Fades stay accurate at any playback speed and when pausing.
+- Silence between tracks is detected and removed automatically.
+- Songs that begin abruptly with vocals or beats now come in naturally.
+- Support for gapless album playback and adjustable fades when switching tracks yourself.
+
+### Playback Fades & Smooth Seeking
+- Added optional smooth fade-out and fade-in when pausing and resuming playback.
+- Seeking within a track is now smooth, without clicks or jumps.
+- The volume dips gently while you seek quickly or hold down the arrow keys.
+- Separate fade settings for Book, Podcast, and Music playback (Ctrl+Shift+I).
+
+### Podcast Downloads & Management
+- Added "Download All Episodes": press Ctrl+S on a podcast to download all its episodes, from oldest to newest, or press Ctrl+S again to cancel the remaining downloads.
+- Added Ctrl+Shift+S to cancel all pending and active downloads at once.
+- Added "Show in Folder" (Ctrl+F) on downloaded episodes to find the file in Windows Explorer.
+- Added Ctrl+Alt+J to open the downloads folder from anywhere in the player.
+- Downloads pause automatically before your drive runs out of space.
+
+### Accessibility & Screen Reader Improvements
+- Fixed screen readers announcing "unavailable" when dialogs such as folder and file pickers open.
+
+### Bug Fixes & Performance
+- Fixed some podcast feeds, such as those hosted on Acast, that could not be added.
+- Queuing or cancelling many downloads at once is now much faster.
+- General performance and memory improvements.
+
 # Changes version 0.1
 
 - First public test preview of Blue Wave Player.
