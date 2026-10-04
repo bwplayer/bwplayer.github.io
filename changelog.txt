@@ -1,3 +1,31 @@
+# Changes version 0.2.1
+
+### Smart Mix & Audio Transitions
+- Improved musical ending detection to accurately identify song endings while preserving natural reverb tails, quiet lead-ins, and instrumental decay.
+- Smooth tail fades: reverb tails and trailing instrumental notes now fade out gently under the incoming song instead of cutting off abruptly.
+- Added "Tail handling" option (Fade or Cut) to Custom mix settings.
+- Classic crossfade with silence detection now initiates smoothly where the musical content ends.
+
+### Audio Engine & Normalization Stability
+- Added floating-point sample guards to eliminate invalid (NaN / infinite) audio samples across the equalizer, limiter, and gain stages, preventing playback cutouts and muted streams.
+- Fixed normalization gain calculation and volume stability in release builds.
+- Refined in-playback loudness measurement so quiet intros no longer distort or override the full-track loudness estimate.
+
+### Music Library & Performance
+- Background folder scanning: adding music folders manually no longer blocks or freezes the user interface.
+- Implemented a high-performance natural sorting algorithm, making library scans and file sorting up to 4x faster.
+- Screen reader feedback: pressing Ctrl+A while a folder is being scanned announces progress, followed by a completion announcement for scans taking over a second.
+
+### Download Queue & Network Reliability
+- Fixed an issue where stalled network connections or unresponsive servers could freeze the download queue indefinitely.
+- Added automatic recovery: if no data is received for 30 seconds, the download automatically reconnects and resumes via HTTP Range requests.
+- Instant cancellation: cancelling a download closes the network stream immediately and frees the download slot for queued items without delay.
+- Robust queue management preventing slot leaks on network, database, or UI errors.
+- Automatic cleanup of broken or missing temporary download files from the active list.
+
+### General & Shortcuts
+- Added Ctrl+F1 shortcut to quickly open the user guide from anywhere in the player.
+
 # Changes version 0.2
 
 ### Loudness Normalization & Audio Limiter
