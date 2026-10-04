@@ -1,3 +1,31 @@
+# Changes version 0.2.1
+
+### Smart Mix & Audio Transitions
+- Song endings are now recognized more accurately, keeping natural echoes, quiet lead-ins, and fading instruments intact.
+- Echoes and trailing notes at the end of a song now fade out gently under the next song instead of being cut off.
+- Added a "Tail handling" option (Fade or Cut) to the Custom mix settings.
+- Classic crossfade with silence detection now starts smoothly where the music ends.
+
+### Sound & Volume Stability
+- Fixed rare cases where playback could cut out or go silent when using the equalizer, volume boost, or normalization.
+- Volume normalization is now more reliable and keeps the volume steady.
+- Songs with quiet intros now play at the right volume.
+
+### Music Library & Performance
+- Adding music folders manually no longer freezes the player while they are scanned.
+- Scanning and sorting your library is now much faster.
+- Screen reader feedback: pressing Ctrl+A while a folder is being scanned tells you the scan is in progress, and you hear when a longer scan is finished.
+
+### Downloads
+- Fixed the download queue getting stuck when a connection stalls or a server stops responding.
+- Downloads that stall now reconnect and continue automatically from where they stopped.
+- Cancelling a download now takes effect immediately, and the next download in the queue starts right away.
+- The download queue now recovers reliably from errors.
+- Downloads whose partial files were lost are now removed from the list automatically.
+
+### General & Shortcuts
+- Added Ctrl+F1 to open the user guide from anywhere in the player.
+
 # Changes version 0.2
 
 ### Loudness Normalization
