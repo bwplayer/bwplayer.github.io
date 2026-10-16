@@ -1,3 +1,48 @@
+# Changes version 0.3
+
+Blue Wave Player 0.3 is the first official release.
+
+### Second Audio Output
+- Play the same audio on two devices at the same time, for example speakers and headphones together. Choose the second device in the Audio Output dialog (Ctrl+U) or from the Settings menu. Like the main device, it is remembered for each book, each podcast, and your music library.
+- If one device sounds later than the other (Bluetooth headphones often do), set the second output delay in the same dialog to line them up by ear.
+
+### Music Files & Tags
+- Rename track files right from any music list with F2: the name becomes editable in place, just like in File Explorer. If a file with that name already exists, the player tells you and lets you choose another name. Your library, playlists, and playback queue keep the renamed track, even while it is playing.
+- Edit a track's tags (title, artist, album, genre, year, lyrics, and more) with Ctrl+D.
+- Edit the tags of a whole folder at once: press Ctrl+D on a folder to change the artist, album, genre, year, and other shared details of all its tracks, including those in its subfolders. Each tag can be kept as it is on every track, cleared, set to one of the values the tracks already have, or set to anything you type.
+- If you close the player while tags are still being saved, it asks first, so no file is left half saved. If the sleep timer closes the player or shuts down the computer, it waits until the tags are saved.
+- Press Space on a folder to hear the total duration of its music, and Shift+Space to hear how many tracks it holds and their size. Shift+Space on a track tells you its file size.
+- Ctrl+C on a folder copies its path.
+- The context menus of tracks and folders now include all of these actions.
+
+### Music Transitions & Settings
+- When you change tracks yourself, the next song now starts where its music actually begins, so manual switches no longer sound like a gap.
+- New options for manual track changes: where the next song starts, how the switch sounds (crossfade, next song first, quick cut, or instant), and an option to shape the fade-in to the way the next song begins.
+- Backspace in Music Mode can either go back to the beginning of the song or restart it using your manual switch settings.
+- Music Playback Settings (Ctrl+Y) are now organized in two tabs: Automatic Transitions and Manual Track Change.
+- Save your own Smart Radio presets, just like equalizer presets.
+
+### Audiobooks & Bookmarks
+- Shift+Space on a book tells you the size of its audio files, and Ctrl+C copies its location.
+- In a book's track list and folder tree, Space tells you a track's duration, Shift+Space its size, and Ctrl+C copies its path.
+- New context menus for books and their tracks, with options such as play, rename, rescan, copy path, and size.
+- Pressing Enter on the track or chapter that is already playing now starts it again from the beginning.
+- Press Ctrl+F in the Bookmark Manager to show all bookmarks, only those with notes, or only those without.
+
+### Dialogs & Accessibility
+- Settings such as the equalizer, sleep timer, playback fades, normalization, podcast playback, proxy, music playback, and rewind after pause, as well as bookmark notes, now open in their own dialogs that screen readers announce clearly and quickly.
+- Folder and file pickers now open inside the main window.
+- Smoother screen reader feedback: list and tree items are no longer read twice after filtering or deleting, and message boxes are announced sooner.
+- After deleting or editing an item, focus returns to the right place, and emptied categories and playlists stay open so you can add items again.
+
+### Bug Fixes
+- Removing a book or podcast from inside a category now removes it everywhere right away.
+- Setting the music folder while a playlist is playing no longer changes the playlist.
+- Books you added manually inside your main audiobook folder are now merged into it, keeping their progress, bookmarks, and categories.
+- Fixed the beginner guide hints and the window title when adding media.
+- Fixed a Windows beep when opening the bookmark filter.
+- General stability and performance improvements.
+
 # Changes version 0.2.1
 
 ### Smart Mix & Audio Transitions
