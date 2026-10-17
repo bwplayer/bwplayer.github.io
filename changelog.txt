@@ -1,3 +1,16 @@
+# Changes version 0.3.1
+
+### Podcast Search
+- Search now finds many more podcasts, and finds them even when a name is spaced or written differently: "6minutes", "6 minutes" and "6 Minute" all find the same shows, and "thisamericanlife" finds This American Life.
+- Results are now sorted by best match, so the podcast you searched for comes first.
+- Choose how results are sorted from the Sort submenu in a result's context menu: Best Match, Last Published Date, Episode Count, or Name. Your choice is remembered for your next searches.
+- If a search takes a while, you now hear "Still searching" every few seconds until the results arrive.
+
+### Bug Fixes
+- A book now continues exactly where you left it after switching to Podcast or Music Mode and back. Before, it could start its track or chapter again from the beginning.
+- After closing the update window opened from Check for Update, keyboard shortcuts work again.
+- Podcasts whose feed is missing some details, or has no episodes yet, can now be subscribed to and updated normally, and keep the details shown in the search results.
+
 # Changes version 0.3
 
 Blue Wave Player 0.3 is the first official release.
