@@ -26,10 +26,20 @@ nav {
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
 nav ul {
@@ -67,6 +77,13 @@ main {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.hero-logo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1rem;
 }
 
 .hero h1 {
@@ -183,6 +200,10 @@ footer {
     nav ul li a:focus {
         background: rgba(255, 255, 255, 0.35);
         outline: 2px solid #fff;
+    }
+    .hero-logo {
+        width: 128px;
+        height: 128px;
     }
     .hero h1 {
         font-size: 2.2rem;
