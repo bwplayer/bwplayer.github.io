@@ -1,3 +1,81 @@
+# Changes version 0.4
+
+### Explorer Mode (New)
+- A new fourth mode, Explorer Mode (F4), plays any audio file on your computer without adding it to your library. Whatever is playing in Book, Podcast, or Music Mode keeps playing in the background while you use it.
+- Explorer Mode has ten playback slots. Each slot holds its own file and remembers where you stopped, together with its own volume, speed, equalizer, output device, and other settings. Several slots can play at the same time. When you come back to Explorer Mode, the files of the slots are ready, so the first Space starts at once.
+- Press the number keys 1 to 9 and 0 to choose a slot, Ctrl+Tab to move to the next slot that has a file, and Alt with a number to empty a slot. Ctrl+L shows all your slots.
+- Give a slot a name of your own with F2 in the slot list, and move a named slot up or down with Alt+Up and Alt+Down. The context menu of the slot list offers everything you can do with a slot.
+- The master slot (=) plays nothing: it holds the settings you want your slots to have. Change the volume, speed, equalizer, or any other setting while it is active. Ctrl+Alt with a number gives that slot the master slot's settings, and Ctrl+Alt+= gives them to all slots. Ctrl+Shift with a number, or Ctrl+Shift+= for the master slot, takes the settings back to the program's defaults. Alt+= empties all slots. In the Explorer tab of Ctrl+Y you can choose whether slots that have the master slot's settings change together with it.
+- Press Ctrl+T to browse your computer. Only folders that contain audio files are shown, and hidden and system folders are shown or hidden just as Windows Explorer does. When you play a file, the other files in its folder come along, so you can move to the next or previous one just like in Music Mode. Shift+Enter loads a file without playing it.
+- Ctrl+PageUp and Ctrl+PageDown move to the previous or next folder, going through subfolders as Music Mode does. With Ctrl+Shift+N, a slot can go on into the next folder by itself at the end of a folder, with PageDown and PageUp, or both. Ctrl+Shift+F chooses when the name of a new folder is read.
+- The keys and settings you know from Music Mode work on the slot you are using, including shuffle, repeat, auto-play, the playback queue, the sleep timer, and smooth transitions between songs. M tells you the file and the slot, and N the file that plays next.
+- Edit the tags of a file or a whole folder with Ctrl+D, as in Music Mode.
+- Press Ctrl+O to search for audio files anywhere on your computer. The results come from the player's own index, so they appear at once.
+- Explorer Mode has playlists of its own: press Ctrl+K to create and manage them.
+- The context menus of Explorer Mode list everything the keys do, each with its key.
+- Listen to internet radio and other online streams: press Ctrl+A and type or paste the address. Playlist files for radio stations (m3u and pls) and HLS streams work too, from a file or from a link, whatever the link's name. The player tells you the name of the station and the song that is playing.
+- Pause a live stream, or go back in it, and go forward again up to the live moment. The player keeps up to an hour by default; choose how long in the Explorer tab of Ctrl+Y. F and E tell you how much was received and how far behind live you are.
+- A link to an audio file plays like a podcast episode: you can move anywhere in it.
+- In a list of many streams, Shift+T lists them all. If the list sorts its channels into groups, as IPTV lists do, Shift+P shows them as a tree of groups, and Ctrl+PageUp and Ctrl+PageDown move to the previous or next group.
+- The streams you played recently are listed with Ctrl+Shift+A, and you can save your favorite streams under a name of your choice with Ctrl+Alt+A. Ctrl+C copies a stream's link.
+- The Explorer tab of Ctrl+Y sets which slot is active when you start, what happens to the other slots when you open a file, and what happens to the playback of the other modes when you come to Explorer Mode or leave it.
+
+### Open Audio Files from Windows
+- Blue Wave Player can now be your default player for audio files. Choose "Register as Default Player" in the Program menu, choose the file types you want, then choose Blue Wave Player in the Windows default apps settings that open.
+- A file you open from Windows plays in Explorer Mode. You choose the slot it goes to in the Explorer tab of Ctrl+Y: the first empty slot, the active slot, a slot of your choice, or the slot after the last one used. You also choose what happens when that slot is playing, or when the file is already in a slot. When you open several files together, they play one after another.
+- If the player is already open, the file opens there instead of in a second window.
+
+### Music
+- Add single audio files from anywhere on your computer with Ctrl+Shift+A. They appear together in a folder named Singles, and the files stay where they are.
+- Shuffle is much smarter. In the new Shuffle tab of the Music Playback Settings (Ctrl+Y), you can play every song once before any song repeats, keep songs from the same folder or the same artist apart, and give more chances to songs you have not heard for a while.
+- Leave a song or a whole folder out of shuffle with Ctrl+S. Press Ctrl+Shift+S to see everything you left out and bring things back.
+- The player now remembers how often each song was played and skipped. Press Ctrl+I on a song or a folder to hear it, and Ctrl+R to start counting again.
+- See your most played songs with Ctrl+Alt+L, and the songs you added recently with Ctrl+Shift+Alt+L.
+
+### Audiobooks
+- Skip the same introduction or closing music in every track of a book: press Ctrl+Shift+Y and choose how many seconds to skip at the start and at the end of each track. Every book keeps its own setting.
+- Delete a book from your computer with Ctrl+Shift+Delete. The player asks before deleting.
+- The T and G keys have swapped places: T now tells you how much of the book you have listened to, and G its total length.
+
+### Podcasts
+- Look at the episodes of a podcast before you subscribe: in the search results, open its menu and choose Preview Episodes.
+- Share your podcasts with a friend, or bring them over from another podcast app: Ctrl+Shift+E saves your podcast list to a file, and Ctrl+Alt+E opens one. You choose which podcasts to include, and whether to keep your categories and the names you gave your podcasts.
+- When your connection is slow, an episode you play online pauses to fill up, then plays on without breaks instead of stopping again and again. Choose how long it should play without a break in the Podcast Playback Settings.
+- Online episodes start sooner and use less data: each link is asked only once, and links that pass through several redirects no longer keep you waiting.
+
+### Bookmarks
+- Jump to the next or previous bookmark with Shift+PageDown and Shift+PageUp.
+- Choose when the name of a bookmark is read aloud with Ctrl+Shift+M. The same choice is in the Speech menu.
+- Previous Bookmark no longer gets stuck on a bookmark you passed a moment ago: it goes on to the one before it.
+
+### Categories & Playlists
+- In the main window, Shift with a number now opens the category or playlist that has that number, and Ctrl with the number adds what you are listening to, or takes it out again.
+- An empty list of categories or playlists now tells you so, and that Ctrl+N creates one.
+
+### More Options
+- Seek across tracks: when you turn it on, moving past the end or the beginning of a track goes on into the next or previous one. You will find it in the Pause and Seek Fades settings (Ctrl+Shift+I).
+- The announcements for track, folder, and book volume changes now have four choices: Disabled, Automatic, Manual, or Automatic and manual.
+- Press Ctrl+Shift+P to hear how much internet data the player has used since you opened it.
+- Many more audio formats play: WebM and Matroska (many files downloaded from YouTube are in these formats), AC3, ALAC, DSD, Musepack, OptimFROG, Speex, TTA, and audio CD tracks. In Explorer Mode, the sound of video files plays too.
+- When a file cannot be played, the player now tells you.
+- Alt+F4 now silences the player and closes its window at once; your places and settings are still saved.
+
+### Bug Fixes
+- Fixed the player sometimes not opening, or opening without your books and settings, when it was started from certain shortcuts.
+- If something goes wrong while the player starts, it now tells you what happened instead of closing without a word.
+- Opening the player again right after closing it now works.
+- Downloaded podcast episodes no longer lose their "downloaded" mark when two episodes of a podcast have the same title.
+- Two downloads with the same file name no longer overwrite each other.
+- New books no longer disappear from the list for a few minutes while their files are still being copied.
+- Castbox links now add the right podcast, and more kinds of Castbox links are recognized.
+- Seeking in an online episode past the part that was downloaded, or resuming one at the place you stopped, no longer ends it at once.
+- Links on servers that require a modern secure connection now work, and secure sites work through a SOCKS5 proxy too.
+- Some M4A files that played silently or not at all now play.
+- Folders that Windows marks as system folders, such as a folder with its own icon or one copied from another computer, are no longer left out: the program's folder chooser shows them, and their audio files come into your music library and your books, as Windows Explorer shows them.
+- Typing letters to find an item in a list now starts over in a new folder or list, instead of adding to the letters you typed before.
+- The Music Library Explorer (Ctrl+T) no longer opens when there is no music folder.
+- The second output delay is now only shown when a second output device is chosen.
+
 # Changes version 0.3.1
 
 ### Podcast Search
