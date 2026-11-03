@@ -1,3 +1,37 @@
+# Changes version 0.4.1
+
+### Window Title
+- Choose what the window title shows: press Ctrl+Alt+P, or choose Title Settings in the Settings menu. Each mode has its own choice. The program name is always shown. You can add the mode's name and the names of what is playing: the book, volume and track; the episode and podcast; the track and playlist; or, in Explorer Mode, the file, slot and playlist. Check the items you want and put them in any order with the Move Up and Move Down buttons, or with Alt+Up and Alt+Down.
+- A check box leaves out the mode's name while something is loaded.
+- The title now changes silently, so your screen reader no longer reads it at every new track. "Read the title aloud" sets, for each mode, when it is still read: when the mode changes (the default), when the mode or what is open in it changes, at every change, or never.
+- The hint about Ctrl+F1 is on the title in every mode until you first add a book, podcast or music, or play something in Explorer Mode.
+
+### Explorer Mode
+- Links to Windows Media servers, which start with mms://, play.
+- If a server's security certificate has expired or is not valid, the player now tells you so and asks whether to connect anyway. Before, the link only failed. Check "Always trust this server" to be asked no more. Press Ctrl+Alt+Shift+A to see the servers you trust and remove them. The same applies when you add a podcast or download an episode.
+- A link whose server stops sending no longer hangs the player. Playback pauses, the player tells you what went wrong, and Space opens the link again from where it stopped.
+- If a slot's file is deleted, the slot takes the next file of its list, paused at its beginning. This works whether the file was deleted while the player was open or while it was closed. If the slot's file is renamed, the slot keeps it under its new name.
+
+### Music
+- Choosing a large music folder with Ctrl+D no longer freezes the player. A window shows the folder being read and the files found, and Escape stops the scan without changing your library.
+- Large libraries no longer make the player hang on shuffle or next track.
+- Changing tracks is quicker, and holding PageDown or PageUp no longer piles up track changes: the last one wins.
+- Leaving tracks out of shuffle works with folders as you would expect:
+  - Bring back one subfolder or track of a folder you left out, and the rest of the folder stays out.
+  - The player says the name of what it left out or brought back.
+  - Exclude from Shuffle and Include in Shuffle are in the context menu of tracks and folders.
+- In the list of what is left out of shuffle (Ctrl+Shift+S):
+  - Ctrl+S brings an item back, and Delete brings everything back after a question.
+  - Enter on a folder shows only what is left out inside it, and Backspace returns to the list.
+- With shuffle on, a track you removed from the library no longer comes back with Next or Previous.
+- A track shorter than the crossfade no longer stops playback when it ends.
+
+### Everywhere
+- In a question with Yes and No, press Y or N, or Alt+Y or Alt+N, to answer.
+- Questions and messages now use the player's own message box, so NVDA no longer says "unavailable" before reading them.
+- The information about a new version opens in a window of its own, instead of replacing what was in the main window.
+- Choosing a track in a list no longer announces it again: you already heard it in the list.
+
 # Changes version 0.4
 
 ### Explorer Mode (New)
