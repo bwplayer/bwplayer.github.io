@@ -1,3 +1,16 @@
+# Changes version 0.4.2
+
+### Fixes
+- On some computers, such as Windows 8 with .NET 4.8, the player often failed to start with the error "Common Language Runtime detected an invalid program". It now starts.
+- The player no longer closes by itself when a file is renamed or moved on a drive whose folder path is longer than 260 characters.
+- The player no longer becomes unresponsive with menus and keys not working after a dialog disappears without closing; it now recovers automatically within a second.
+
+### Explorer Mode
+- Adding a folder to a playlist with Ctrl and a number, or taking it out, now happens at once, even for a large folder. Before, a folder with thousands of files could take several seconds.
+
+### Music
+- Holding PageDown or PageUp is lighter on the player: the menu is no longer rebuilt for every track. It is brought up to date once you stop, and the menu opens as quickly as before.
+
 # Changes version 0.4.1
 
 ### Window Title
