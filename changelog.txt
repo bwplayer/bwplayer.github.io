@@ -1,3 +1,55 @@
+# Changes version 0.5
+
+### Setup (New)
+- Blue Wave Player now comes with a setup. Its first page offers three choices: install it for yourself, install it for all users of the computer (Windows asks for administrator rights), or make a portable copy that keeps everything, your library and settings too, in one folder you can carry on a USB drive.
+- Start menu and desktop shortcuts are both optional.
+- An installed copy keeps your library and settings in AppData\Roaming\Blue Wave Player, and downloaded episodes go to your Downloads folder, under Blue Wave Player. A portable copy keeps everything next to BWP.exe, as before.
+- When you install, the setup can bring over your library and settings from a portable copy. The portable copy itself is not changed.
+- When you install, a page lets you choose the file types Blue Wave Player opens, in three lists: audio, video, and playlists and stream lists. Each list starts with All. The checked types are offered in Open with and in Default apps of Windows, and the last page of the setup can open Default apps for you.
+- To remove an installed copy, use Installed apps in the Windows settings. You are asked whether to delete your library and settings too; unless you say Yes, they stay. Downloaded episodes are never deleted.
+- Updates now download the new setup and run it by themselves. An installed copy stays installed, and a portable copy stays portable, as does the copy you already have. The setup an update downloaded is deleted the next time Blue Wave Player starts.
+- In the Register as Default Player window, the file types are now checked as they are registered in Windows.
+
+### Each Mode Plays on Its Own (New)
+- Book, Podcast and Music Mode now each have a player of their own, so one can go on playing while you use another: a podcast while you look through your books, or music under an audiobook.
+- What a mode does when you go to another mode, Explorer Mode included, is its own setting, When you leave this mode, on its Ctrl+Y page; in Music Mode it is on the new General tab. Pause, the default, pauses the mode, and it is where you left it when you come back. Keep playing lets it go on.
+- The keys always control the mode on screen. A mode playing behind it keeps its own repeat, auto-play and file announcements.
+- The sleep timer stops everything that plays. Its After the current track choice counts the track of the mode on screen only.
+- Explorer Mode's old setting When you come to Explorer Mode is gone: When you leave this mode of each mode takes its place.
+
+### Book Mode
+- Ctrl+Y now opens Book Playback Settings, a page of its own. Before, it only turned silence detection on or off; silence detection is now two settings on that page: Remove silence at the start of a file, and Remove silence at the end of a file. If silence detection was on, both are on.
+- Each of them has a sensitivity: Low, the default, skips only near silence, as before; Medium and High also skip quiet noise. With High, the hum of a recorder before the reader starts is skipped too, so a file starts right at the voice.
+- How much silence still plays after the last sound of a file can be set, from 0 to 3 seconds; half a second by default, as before.
+- New: Shorten pauses inside a file. Long pauses between sentences are shortened while the file plays: pauses longer than a set length, 1 second by default, are shortened to a set length, half a second by default, with a sensitivity of their own. It is off by default. Times, bookmarks and the remaining time stay those of the file, so a bookmark still opens at the same place.
+
+### Music Mode
+- D now tells you how long the playback queue has left to play: what is left of the track playing together with the length of every queued track. It speaks while the queue is on and has tracks in it.
+
+### Playlists
+- Put a track or folder straight into a new playlist: in Music and Explorer Mode, press Ctrl+N on it, or choose Add to New Playlist at the end of the Playlists submenu of its context menu. Type the playlist's name and press Enter: the playlist is made with the track, or all the tracks of the folder, in it. A folder with no audio files is not added, and in Explorer Mode neither is a whole drive.
+- The Playlists submenu of the context menu is there even before you have a playlist.
+- Ctrl+` works on a folder too: each playlist in the menu is checked when all the tracks of the folder are in it. In Explorer Mode, a folder's context menu now has a Playlists submenu too, as a file's has.
+
+### Explorer Mode
+- Several files opened together from Windows now play as a temporary playlist: Next and Previous go through those files only, starting with the one you pressed Enter on. The playlist stays when you restart the player, and is gone once you open another file in that slot. Before, the first file played with its folder, and the others went into the queue.
+- Three new settings in the Explorer tab of Ctrl+Y choose how several files are opened: their order, by name or as Windows sends them; what happens when their slot is playing; and what happens when the first of them is already in a slot.
+- N and Shift+N tell you the next file even when auto-play is off, as in Music Mode.
+- Shortcuts to folders, such as one on the desktop, are shown under their names, and Enter opens the folder they point to. The desktop also shows the folders that all users of the computer share there.
+- The window title of a radio stream shows the station and the song playing, instead of the end of its address, such as live.ogg.
+- Radio streams are now normalized when normalization is on, as other files are.
+- A file chosen with Enter in the search results, a stream chosen in a stream list, or a playlist chosen with Ctrl+` or the Playlists submenu, is no longer announced again: you already heard it there.
+
+### Fixes
+- Settings you change with a key or from a menu, such as the seek and volume announcements, repeat, and most check items of the menus, are now saved a second after your last change. Before, they were saved only when Blue Wave Player was closed normally, and were lost if it crashed, was ended in Task Manager, or Windows shut down.
+- The Pitch menu no longer speaks the new pitch, as a choice from a menu is never announced. The Volume menu now saves the new volume at once, as the Up and Down keys do.
+- On the pages for exporting and importing podcasts, Up and Down Arrow move through the page again instead of changing the volume of the player.
+- In Explorer Mode, with the window title set to the file name, NVDA now reads the file's name when Blue Wave Player opens, instead of only Blue Wave Player.
+- When you open a file from Windows while Blue Wave Player is running, NVDA now reads the new file's title when the window comes up, instead of the title of the file that was playing.
+- Adding a book with a file whose length cannot be read no longer leaves the player unusable with the error "TimeSpan overflowed because the duration is too long". Books that already have this problem are scanned again by themselves, and their lengths are put right.
+- When an error keeps happening, its messages no longer pile up until the player has to be ended by force: only one error message is shown at a time. The error log counts the same error instead of saving it again and again, and notes what was happening at the time, so errors are easier to find and fix. What you type in a text box is never kept.
+- The hint about Ctrl+F1 leaves the window title as soon as you add a music folder, so NVDA no longer reads it when you come back to the window.
+
 # Changes version 0.4.2
 
 ### Fixes

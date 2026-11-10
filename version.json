@@ -1,7 +1,9 @@
 ﻿{
-    "Version":  "0.4.2",
+    "Version":  "0.5",
     "Url":  "https://github.com/bwplayer/bwplayer.github.io/raw/refs/heads/main/BWP.zip",
     "UpdaterUrl":  "https://github.com/bwplayer/bwplayer.github.io/raw/refs/heads/main/updator.exe",
     "ChangelogUrl":  "https://github.com/bwplayer/bwplayer.github.io/raw/refs/heads/main/changelog.txt",
-    "Sha256":  "ed0f9160491062b22143bbc8def58c44bef35270c391fdd39b9ddb1ee9433465"
+    "Sha256":  "4dd28e2cb22a0637bca1626d00936b0afceb3c094fdd644aedd1a6643b29c67e",
+    "SetupUrl":  "https://github.com/bwplayer/bwplayer.github.io/raw/refs/heads/main/Blue%20Wave%20Player%20v0.5%20Setup.exe",
+    "SetupSha256":  "e9e8de77b5a5a1fd0044541fd96a947fbecd9c897fd7ffbdcccbb6009176a9f4"
 }
